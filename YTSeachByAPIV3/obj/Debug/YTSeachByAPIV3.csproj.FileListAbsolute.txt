@@ -23,3 +23,28 @@ E:\YTSeachByAPIV3\YTSeachByAPIV3\bin\Debug\Newtonsoft.Json.xml
 E:\YTSeachByAPIV3\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.csproj.CopyComplete
 E:\YTSeachByAPIV3\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.exe
 E:\YTSeachByAPIV3\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.pdb
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSeachByAPIV3.exe.config
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSeachByAPIV3.exe
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSeachByAPIV3.pdb
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.dll
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Core.dll
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.dll
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.PlatformServices.dll
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.YouTube.v3.dll
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Newtonsoft.Json.dll
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.pdb
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.xml
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.pdb
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.xml
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Core.pdb
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Core.xml
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.YouTube.v3.pdb
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.YouTube.v3.xml
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Newtonsoft.Json.xml
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.csproj.AssemblyReference.cache
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.csproj.SuggestedBindingRedirects.cache
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.csproj.CoreCompileInputs.cache
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.csproj.CopyComplete
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.exe
+D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.pdb
