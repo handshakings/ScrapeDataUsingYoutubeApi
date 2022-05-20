@@ -57,11 +57,32 @@ namespace YTSeachByAPIV3
                     email = email + "\n" + match.Value;
                 }
             }
-            //if (emails.Count > 2)
-            //{
-            //    email = email.Remove(0, 1);
-            //}
+            if (email.Length > 2)
+            {
+                email = email.Remove(0, 1);
+            }
             return email;
+        }
+
+
+        static public string SearchLinks(string content)
+        {
+            MatchCollection mc = Regex.Matches(content, @"(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?");
+
+            string sLinks = string.Empty;
+            foreach (Match link in mc)
+            {
+                if (!sLinks.Contains(link.Value))
+                {
+                    link.Value.Replace(',', ' ');
+                    sLinks = sLinks + "\n" + link.Value;
+                }
+            }
+            if (sLinks.Length > 2)
+            {
+                sLinks = sLinks.Remove(0, 1);
+            }
+            return sLinks;
         }
 
     }
