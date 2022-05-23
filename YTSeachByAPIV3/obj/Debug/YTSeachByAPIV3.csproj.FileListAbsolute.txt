@@ -51,17 +51,12 @@ D:\Upwork Projects\YoutubeSearchQueryByAPI\ScrapeDataUsingYoutubeApi\YTSeachByAP
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSeachByAPIV3.exe.config
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSeachByAPIV3.exe
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSeachByAPIV3.pdb
-E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.dll
-E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.PlatformServices.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Core.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.dll
-E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.PlatformServices.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.YouTube.v3.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Newtonsoft.Json.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.pdb
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.xml
-E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.pdb
-E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Auth.xml
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Core.pdb
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.Core.xml
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\Google.Apis.YouTube.v3.pdb
@@ -73,3 +68,5 @@ E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.csproj.CopyComplete
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.exe
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Debug\YTSeachByAPIV3.pdb
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSearchQueryAPI.dll
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Debug\YTSearchQueryAPI.pdb

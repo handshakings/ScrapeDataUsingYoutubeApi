@@ -48,3 +48,5 @@ E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Release\YTSeachByAPI
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Release\YTSeachByAPIV3.csproj.CopyComplete
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Release\YTSeachByAPIV3.exe
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\obj\Release\YTSeachByAPIV3.pdb
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Release\YTSearchQueryAPI.dll
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSeachByAPIV3\bin\Release\YTSearchQueryAPI.pdb
