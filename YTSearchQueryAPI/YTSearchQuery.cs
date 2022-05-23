@@ -37,6 +37,13 @@ namespace YTSearchQueryApiLib
                     {
                         try
                         {
+                            //Subscription body = new Subscription();
+                            //body.Snippet = new SubscriptionSnippet();
+                            //body.Snippet.ResourceId = new ResourceId();
+                            //body.Snippet.ResourceId.ChannelId = "UC0eDVemnMfXeJeE0nCh9CDw";
+                            //var subChannel = youtubeService.Subscriptions.Insert(body,"snippet");
+                            //var subChannelResponse = await subChannel.ExecuteAsync();
+
                             var searchVidioRequest = youtubeService.Videos.List("snippet,statistics");
                             searchVidioRequest.Id = searchResult.Id.VideoId;
                             var searchVidioResponse = await searchVidioRequest.ExecuteAsync();

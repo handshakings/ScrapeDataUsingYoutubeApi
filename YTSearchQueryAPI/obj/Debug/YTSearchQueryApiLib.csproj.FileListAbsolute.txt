@@ -20,3 +20,4 @@ E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQuer
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQueryApiLib.csproj.CopyComplete
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQueryAPI.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQueryAPI.pdb
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQueryApiLib.csproj.AssemblyReference.cache
