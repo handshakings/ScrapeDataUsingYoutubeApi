@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "93dd6d44-7487-4e6d-b4d0-7d6cf333846c": {
+      "ProjectGuid": "93dd6d44-7487-4e6d-b4d0-7d6cf333846c",
+      "DisplayName": "Scrapper",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "a7593ff1-b835-49b3-b76e-cc896733dae6": {
+      "ProjectGuid": "a7593ff1-b835-49b3-b76e-cc896733dae6",
+      "DisplayName": "YTSearchQueryApiLib",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
