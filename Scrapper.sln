@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YTSearchQueryApiLib", "YTSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterApiLib", "TwitterApiLib\TwitterApiLib.csproj", "{4BCC8F23-2282-4FBE-BF66-41E52044084F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapperUI", "ScrapperUI\ScrapperUI.csproj", "{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{4BCC8F23-2282-4FBE-BF66-41E52044084F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BCC8F23-2282-4FBE-BF66-41E52044084F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BCC8F23-2282-4FBE-BF66-41E52044084F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,11 @@
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\ScrapperUI.exe.config
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\ScrapperUI.exe
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\ScrapperUI.pdb
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.AssemblyReference.cache
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.SuggestedBindingRedirects.cache
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.Form1.resources
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.Properties.Resources.resources
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.GenerateResource.cache
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.CoreCompileInputs.cache
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.exe
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.pdb
