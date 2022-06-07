@@ -21,3 +21,7 @@ E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQuer
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQueryAPI.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQueryAPI.pdb
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryAPI\obj\Debug\YTSearchQueryApiLib.csproj.AssemblyReference.cache
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryApiLib.csproj.AssemblyReference.cache
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryApiLib.csproj.CoreCompileInputs.cache
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryAPI.dll
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryAPI.pdb

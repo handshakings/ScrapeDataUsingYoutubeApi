@@ -1,4 +1,4 @@
-﻿namespace YTSearchQueryApiLib
+﻿namespace YTSearchQueryLib
 {
     class YTDataModel
     {

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrapper", "Scrapper\Scrapper.csproj", "{93DD6D44-7487-4E6D-B4D0-7D6CF333846C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88AD0524-003E-4CB5-B970-19FD32EFD8FE}"
+	ProjectSection(SolutionItems) = preProject
+		readme.MD = readme.MD
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YTSearchQueryApiLib", "YTSearchQueryAPI\YTSearchQueryApiLib.csproj", "{A7593FF1-B835-49B3-B76E-CC896733DAE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterApiLib", "TwitterApiLib\TwitterApiLib.csproj", "{4BCC8F23-2282-4FBE-BF66-41E52044084F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapperUI", "ScrapperUI\ScrapperUI.csproj", "{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93DD6D44-7487-4E6D-B4D0-7D6CF333846C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DD6D44-7487-4E6D-B4D0-7D6CF333846C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DD6D44-7487-4E6D-B4D0-7D6CF333846C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DD6D44-7487-4E6D-B4D0-7D6CF333846C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7593FF1-B835-49B3-B76E-CC896733DAE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7593FF1-B835-49B3-B76E-CC896733DAE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7593FF1-B835-49B3-B76E-CC896733DAE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7593FF1-B835-49B3-B76E-CC896733DAE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCC8F23-2282-4FBE-BF66-41E52044084F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCC8F23-2282-4FBE-BF66-41E52044084F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCC8F23-2282-4FBE-BF66-41E52044084F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCC8F23-2282-4FBE-BF66-41E52044084F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A72E97-09B8-44D5-AA2A-1E79F7590CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F86F9C16-33DF-4912-8012-AB9954BE3132}
+	EndGlobalSection
+EndGlobal

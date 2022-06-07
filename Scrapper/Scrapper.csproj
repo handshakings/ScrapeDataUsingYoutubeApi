@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YTSearchQueryAPI\YTSearchQueryApiLib.csproj">
+    <ProjectReference Include="..\YTSearchQueryLib\YTSearchQueryLib.csproj">
       <Project>{a7593ff1-b835-49b3-b76e-cc896733dae6}</Project>
-      <Name>YTSearchQueryApiLib</Name>
+      <Name>YTSearchQueryLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,6 @@
-﻿namespace ScrapperUI
+﻿using System.Collections.Generic;
+
+namespace ScrapperUI
 {
     class YTDataModel
     {

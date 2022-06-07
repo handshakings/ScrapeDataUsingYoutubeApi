@@ -1,12 +1,10 @@
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Scrapper.exe.config
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Scrapper.exe
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Scrapper.pdb
-E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\YTSearchQueryAPI.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Google.Apis.YouTube.v3.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Google.Apis.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Google.Apis.Core.dll
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Newtonsoft.Json.dll
-E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\YTSearchQueryAPI.pdb
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Google.Apis.YouTube.v3.pdb
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Google.Apis.YouTube.v3.xml
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\Google.Apis.pdb
@@ -19,3 +17,6 @@ E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\obj\Debug\Scrapper.csproj.Core
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\obj\Debug\Scrapper.csproj.CopyComplete
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\obj\Debug\Scrapper.exe
 E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\obj\Debug\Scrapper.pdb
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\YTSearchQueryLib.dll
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\bin\Debug\YTSearchQueryLib.pdb
+E:\YTDataApiV3\ScrapeDataUsingYoutubeApi\Scrapper\obj\Debug\Scrapper.csproj.AssemblyReference.cache
