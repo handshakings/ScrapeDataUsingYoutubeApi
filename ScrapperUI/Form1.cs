@@ -16,11 +16,24 @@ namespace ScrapperUI
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
         }
-
+        
         private void ImportApiKeys(object sender, EventArgs e)
         {
-            ImportFile(label1);
+            if(((Button)sender).Name == button1.Name)
+            {
+                ImportFile(label1);
+            }
+            else if (((Button)sender).Name == button3.Name)
+            {
+                ImportFile(label7);
+            }
+            else if (((Button)sender).Name == button4.Name)
+            {
+                ImportFile(label9);
+            }
+
         }
         private void ImportFile(Label label)
         {
@@ -42,12 +55,26 @@ namespace ScrapperUI
             };
          
             YTSearchQueryUI yTSearchQueryUI = new YTSearchQueryUI();
-            string data = JsonConvert.SerializeObject(userInput);
-            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(data);
+            string ui = JsonConvert.SerializeObject(userInput);
+            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(ui);
             List<YTDataModel> ytDataModels = JsonConvert.DeserializeObject<List<YTDataModel>>(ytData);
             FillDataInCsv(ytDataModels);
         }
-       
+
+        private async void StartChannelsListScrapping(object sender, EventArgs e)
+        {
+            UserInput userInput = new UserInput
+            {
+                NoOfVideos = double.Parse(comboBox2.Text),
+                ApiKeys = File.ReadAllText(label7.Text).Split('\n')
+            };
+            string[] channelsList = File.ReadAllText(label9.Text).Split('\n');
+            YTSearchQueryUI yTSearchQueryUI = new YTSearchQueryUI();
+            string ui = JsonConvert.SerializeObject(userInput);
+            await yTSearchQueryUI.GetYTDataUIAsync(ui, channelsList);
+        }
+
+
         private void FillDataInCsv(List<YTDataModel> ytDataModels)
         {
             FileStream fileStream = new FileStream(textBox1.Text + ".csv", FileMode.Append);
@@ -103,5 +130,6 @@ namespace ScrapperUI
             return row;
         }
 
+        
     }
 }
