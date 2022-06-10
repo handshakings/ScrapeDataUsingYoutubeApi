@@ -13,7 +13,7 @@ namespace YTSearchQueryLib
 {
     public class YTSearchQueryUI 
     {
-        public async Task<string> GetYTDataUIAsync(string userinput) 
+        public async Task<string> GetYTDataUIAsync(string userinput, Delegate delegateFromUI) 
         {
             UserInput ui = JsonConvert.DeserializeObject<UserInput>(userinput);
             List<YouTubeService> ytServices = new List<YouTubeService>();
@@ -86,6 +86,8 @@ namespace YTSearchQueryLib
                                 Links = links
                             };
                             ytData.Add(yTDataModel);
+
+                            delegateFromUI.DynamicInvoke(rowCounter.ToString()+"/"+ui.NoOfVideos);
                             
                             rowCounter++;
                         }
@@ -108,7 +110,7 @@ namespace YTSearchQueryLib
             return JsonConvert.SerializeObject(ytData);       
         }
 
-        public async Task<string> GetYTDataUIAsync(string userinput, string[] channelUrlList)
+        public async Task<string> GetYTDataUIAsync(string userinput, string[] channelUrlList, Delegate delegateFromUI)
         {
             List<string> channelIDs = await GetChannelIdFromUrl(channelUrlList);
             UserInput ui = JsonConvert.DeserializeObject<UserInput>(userinput);
@@ -123,15 +125,16 @@ namespace YTSearchQueryLib
             }
 
             double noOfPages = ui.NoOfVideos/5;
-            
+            int totalRows = int.Parse(ui.NoOfVideos.ToString()) * channelUrlList.Length;
+            int totalRowsCounter = 1;
             List<YTDataModel> ytData = new List<YTDataModel>();
             
-
             foreach(string channelId in channelIDs)
             {
                 int pageCounter = 1;
                 int rowCounter = 1;
                 int ytServicesCounter = 0;
+               
                 while (pageCounter <= noOfPages)
                 {
                     ytServicesCounter = (pageCounter > ytServices.Count) ? 0 : ytServicesCounter;
@@ -187,8 +190,9 @@ namespace YTSearchQueryLib
                                     Links = links
                                 };
                                 ytData.Add(yTDataModel);
-
+                                delegateFromUI.DynamicInvoke(totalRowsCounter.ToString()+"/"+totalRows);
                                 rowCounter++;
+                                totalRowsCounter++;
                             }
                             catch (Exception ex)
                             {

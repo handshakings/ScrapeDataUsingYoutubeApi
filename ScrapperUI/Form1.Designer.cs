@@ -66,6 +66,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -78,9 +81,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(209, 20);
+            this.button1.Location = new System.Drawing.Point(208, 20);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 26);
+            this.button1.Size = new System.Drawing.Size(163, 25);
             this.button1.TabIndex = 1;
             this.button1.Text = "Import API Keys";
             this.button1.UseVisualStyleBackColor = false;
@@ -93,21 +96,20 @@
             this.label1.ForeColor = System.Drawing.Color.Yellow;
             this.label1.Location = new System.Drawing.Point(383, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 20);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(209, 61);
+            this.textBox1.Location = new System.Drawing.Point(208, 61);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(494, 26);
+            this.textBox1.Size = new System.Drawing.Size(490, 26);
             this.textBox1.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 64);
+            this.label2.Location = new System.Drawing.Point(38, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 18);
             this.label2.TabIndex = 4;
@@ -146,7 +148,7 @@
             "900",
             "950",
             "1000"});
-            this.comboBox1.Location = new System.Drawing.Point(209, 103);
+            this.comboBox1.Location = new System.Drawing.Point(208, 103);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(107, 26);
             this.comboBox1.TabIndex = 6;
@@ -216,7 +218,7 @@
             this.vidPublishedDate.AutoSize = true;
             this.vidPublishedDate.Checked = true;
             this.vidPublishedDate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.vidPublishedDate.Location = new System.Drawing.Point(15, 170);
+            this.vidPublishedDate.Location = new System.Drawing.Point(15, 169);
             this.vidPublishedDate.Name = "vidPublishedDate";
             this.vidPublishedDate.Size = new System.Drawing.Size(147, 22);
             this.vidPublishedDate.TabIndex = 13;
@@ -232,9 +234,9 @@
             this.groupBox1.Controls.Add(this.vidLikes);
             this.groupBox1.Controls.Add(this.vidViews);
             this.groupBox1.ForeColor = System.Drawing.Color.Silver;
-            this.groupBox1.Location = new System.Drawing.Point(16, 220);
+            this.groupBox1.Location = new System.Drawing.Point(16, 212);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(175, 205);
+            this.groupBox1.Size = new System.Drawing.Size(165, 205);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Video";
@@ -248,9 +250,9 @@
             this.groupBox2.Controls.Add(this.chaViews);
             this.groupBox2.Controls.Add(this.chaCreationDate);
             this.groupBox2.ForeColor = System.Drawing.Color.Silver;
-            this.groupBox2.Location = new System.Drawing.Point(202, 220);
+            this.groupBox2.Location = new System.Drawing.Point(192, 212);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(175, 205);
+            this.groupBox2.Size = new System.Drawing.Size(165, 205);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Channel";
@@ -260,7 +262,7 @@
             this.chaName.AutoSize = true;
             this.chaName.Checked = true;
             this.chaName.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaName.Location = new System.Drawing.Point(19, 30);
+            this.chaName.Location = new System.Drawing.Point(18, 30);
             this.chaName.Name = "chaName";
             this.chaName.Size = new System.Drawing.Size(73, 22);
             this.chaName.TabIndex = 13;
@@ -272,7 +274,7 @@
             this.chaURL.AutoSize = true;
             this.chaURL.Checked = true;
             this.chaURL.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaURL.Location = new System.Drawing.Point(19, 58);
+            this.chaURL.Location = new System.Drawing.Point(18, 58);
             this.chaURL.Name = "chaURL";
             this.chaURL.Size = new System.Drawing.Size(61, 22);
             this.chaURL.TabIndex = 8;
@@ -296,7 +298,7 @@
             this.chaVideos.AutoSize = true;
             this.chaVideos.Checked = true;
             this.chaVideos.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaVideos.Location = new System.Drawing.Point(19, 114);
+            this.chaVideos.Location = new System.Drawing.Point(18, 114);
             this.chaVideos.Name = "chaVideos";
             this.chaVideos.Size = new System.Drawing.Size(81, 22);
             this.chaVideos.TabIndex = 9;
@@ -320,7 +322,7 @@
             this.chaCreationDate.AutoSize = true;
             this.chaCreationDate.Checked = true;
             this.chaCreationDate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaCreationDate.Location = new System.Drawing.Point(18, 170);
+            this.chaCreationDate.Location = new System.Drawing.Point(18, 169);
             this.chaCreationDate.Name = "chaCreationDate";
             this.chaCreationDate.Size = new System.Drawing.Size(138, 22);
             this.chaCreationDate.TabIndex = 10;
@@ -332,9 +334,9 @@
             this.groupBox3.Controls.Add(this.email);
             this.groupBox3.Controls.Add(this.socialLinks);
             this.groupBox3.ForeColor = System.Drawing.Color.Silver;
-            this.groupBox3.Location = new System.Drawing.Point(390, 220);
+            this.groupBox3.Location = new System.Drawing.Point(370, 212);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(175, 205);
+            this.groupBox3.Size = new System.Drawing.Size(165, 205);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Misc";
@@ -369,9 +371,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(582, 230);
+            this.button2.Location = new System.Drawing.Point(547, 298);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 79);
+            this.button2.Size = new System.Drawing.Size(191, 84);
             this.button2.TabIndex = 17;
             this.button2.Text = "Start Scraping";
             this.button2.UseVisualStyleBackColor = false;
@@ -379,14 +381,13 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Green;
-            this.label4.Location = new System.Drawing.Point(602, 323);
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Yellow;
+            this.label4.Location = new System.Drawing.Point(547, 212);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 33);
+            this.label4.Size = new System.Drawing.Size(191, 75);
             this.label4.TabIndex = 18;
-            this.label4.Text = "label4";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabControl1
             // 
@@ -395,12 +396,13 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(725, 185);
+            this.tabControl1.Size = new System.Drawing.Size(726, 185);
             this.tabControl1.TabIndex = 19;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.button1);
@@ -410,10 +412,10 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(717, 154);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(718, 154);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Search Query Bot";
+            this.tabPage1.Text = "Scrape by Search Query";
             // 
             // label5
             // 
@@ -427,6 +429,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.comboBox2);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.label8);
@@ -437,10 +440,10 @@
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(717, 154);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(718, 154);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "List of Pages";
+            this.tabPage2.Text = "Scrape by List of Pages";
             // 
             // comboBox2
             // 
@@ -456,7 +459,7 @@
             "80",
             "90",
             "100"});
-            this.comboBox2.Location = new System.Drawing.Point(209, 104);
+            this.comboBox2.Location = new System.Drawing.Point(208, 104);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(107, 26);
             this.comboBox2.TabIndex = 28;
@@ -464,7 +467,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(39, 107);
+            this.label10.Location = new System.Drawing.Point(38, 106);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(107, 18);
             this.label10.TabIndex = 27;
@@ -493,9 +496,9 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(209, 61);
+            this.button4.Location = new System.Drawing.Point(208, 61);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(202, 26);
+            this.button4.Size = new System.Drawing.Size(202, 25);
             this.button4.TabIndex = 23;
             this.button4.Text = "Import List of Pages";
             this.button4.UseVisualStyleBackColor = false;
@@ -524,20 +527,60 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(209, 20);
+            this.button3.Location = new System.Drawing.Point(208, 20);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 26);
+            this.button3.Size = new System.Drawing.Size(202, 25);
             this.button3.TabIndex = 20;
             this.button3.Text = "Import API Keys";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.ImportApiKeys);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(596, 103);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(102, 25);
+            this.button5.TabIndex = 20;
+            this.button5.Text = "Reset";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.Location = new System.Drawing.Point(593, 106);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(102, 25);
+            this.button6.TabIndex = 29;
+            this.button6.Text = "Reset";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Enabled = false;
+            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(547, 394);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(191, 22);
+            this.button7.TabIndex = 20;
+            this.button7.Text = "Open CSV File";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(857, 452);
+            this.ClientSize = new System.Drawing.Size(750, 433);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label4);
@@ -548,6 +591,8 @@
             this.ForeColor = System.Drawing.Color.Silver;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Youtube Bot";
@@ -564,7 +609,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -607,6 +651,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 

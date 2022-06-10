@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
 using System.Windows.Forms;
@@ -10,6 +11,7 @@ namespace ScrapperUI
 {
     public partial class Form1 : Form
     {
+        public delegate void LabelUpdaterDelegate(string a);
         public Form1()
         {
             InitializeComponent();
@@ -18,14 +20,13 @@ namespace ScrapperUI
         {
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
-        
-            
-            
         }
-        private void add(ref string label)
+
+        public void UpdateLabel(string scrappedRowCount)
         {
-            label = "changed";
+            label4.Text = scrappedRowCount;
         }
+
         private void ImportApiKeys(object sender, EventArgs e)
         {
             if(((Button)sender).Name == button1.Name)
@@ -54,13 +55,33 @@ namespace ScrapperUI
 
         private void StartScrapping(object sender, EventArgs e)
         {
-            if(tabControl1.SelectedIndex == 0)
+            if (tabControl1.SelectedIndex == 0)
             {
-                StartSearchQueryScraping();
+                if(label1.Text != "" && textBox1.Text != "")
+                {
+                    button7.Enabled = false;
+                    button2.Text = "Scrapping...";
+                    StartSearchQueryScraping();
+                    button7.Text = "Open "+textBox1.Text + ".csv";
+                }
+                else
+                {
+                    MessageBox.Show("Please provide all inputs");
+                }  
             }
             else if(tabControl1.SelectedIndex == 1)
             {
-                StartChannelsListScrapping();
+                if (label7.Text != "" && label9.Text != "")
+                {
+                    button7.Enabled = false;
+                    button2.Text = "Scrapping...";
+                    StartChannelsListScrapping();
+                    button7.Text = "Open Pages list.csv";
+                }
+                else
+                {
+                    MessageBox.Show("Please provide file(s)");
+                }
             }
         }
         private async void StartSearchQueryScraping()
@@ -85,9 +106,11 @@ namespace ScrapperUI
             };
             YTSearchQueryUI yTSearchQueryUI = new YTSearchQueryUI();
             string ui = JsonConvert.SerializeObject(userInput);
-            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(ui);
+            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(ui,new LabelUpdaterDelegate(UpdateLabel));
             List<YTDataModel> ytDataModels = JsonConvert.DeserializeObject<List<YTDataModel>>(ytData);
             FillDataInCsv(ytDataModels);
+            button2.Text = "Start Scrapping";
+            button7.Enabled = true;
         }
 
         private async void StartChannelsListScrapping()
@@ -100,15 +123,17 @@ namespace ScrapperUI
             string[] channelsList = File.ReadAllText(label9.Text).Split('\n');
             YTSearchQueryUI yTSearchQueryUI = new YTSearchQueryUI();
             string ui = JsonConvert.SerializeObject(userInput);
-            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(ui, channelsList);
+            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(ui, channelsList, new LabelUpdaterDelegate(UpdateLabel));
             List<YTDataModel> ytDataModels = JsonConvert.DeserializeObject<List<YTDataModel>>(ytData);
             FillDataInCsv(ytDataModels);
+            button2.Text = "Start Scrapping";
+            button7.Enabled = true;
         }
 
 
         private void FillDataInCsv(List<YTDataModel> ytDataModels)
         {
-            string name = (textBox1.Text == "") ? "Pages list.csv" : textBox1.Text;
+            string name = (textBox1.Text == "") ? "Pages list.csv" : textBox1.Text+".csv";
             FileStream fileStream = new FileStream(name, FileMode.Append);
             StreamWriter writer = new StreamWriter(fileStream);
             writer.WriteLine(BuildHeader());
@@ -162,6 +187,26 @@ namespace ScrapperUI
             return row;
         }
 
-        
+        private void button5_Click(object sender, EventArgs e)
+        {
+            label1.Text = "";
+            label4.Text = "";
+            textBox1.Text = "";
+            button7.Text = "Open CSV File";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label9.Text = "";
+            label7.Text = "";
+            label4.Text = "";
+            button7.Text = "Open CSV File";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string csvFileName = button7.Text.Substring(5);
+            Process.Start(csvFileName);
+        }
     }
 }

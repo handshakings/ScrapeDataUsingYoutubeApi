@@ -44,7 +44,6 @@ namespace Scrapper
 
             writer.Close();
             fileStream.Close();
-
         }
 
 
