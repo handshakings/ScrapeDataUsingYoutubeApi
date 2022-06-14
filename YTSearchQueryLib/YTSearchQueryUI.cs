@@ -6,7 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web;
 
 
 namespace YTSearchQueryLib
@@ -69,7 +68,7 @@ namespace YTSearchQueryLib
                             {
                                 SNo = rowCounter,
                                 VideoUrl = "https://www.youtube.com/watch?v=" + searchResult.Id.VideoId,
-                                VideoTitle = searchResult.Snippet.Title.Replace(",", " "),
+                                VideoTitle = searchVidioResponse.Items[0].Snippet.Title.Replace(",", " "),
                                 VideoDescription = searchResult.Snippet.Description.Replace(",", " "),
                                 VideoViews = searchVidioResponse.Items[0].Statistics.ViewCount.ToString(),
                                 VideoLikes = searchVidioResponse.Items[0].Statistics.LikeCount.ToString(),
