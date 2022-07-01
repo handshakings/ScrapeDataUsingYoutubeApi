@@ -41,6 +41,10 @@ namespace ScrapperUI
             {
                 ImportFile(label9);
             }
+            else if (((Button)sender).Name == button9.Name)
+            {
+                ImportFile(label12);
+            }
 
         }
         private void ImportFile(Label label)
@@ -61,7 +65,7 @@ namespace ScrapperUI
                 {
                     button7.Enabled = false;
                     button2.Text = "Scrapping...";
-                    StartSearchQueryScraping();
+                    StartSearchQueryVideoScraping();
                     button7.Text = "Open "+textBox1.Text + ".csv";
                 }
                 else
@@ -83,47 +87,65 @@ namespace ScrapperUI
                     MessageBox.Show("Please provide file(s)");
                 }
             }
+            else if (tabControl1.SelectedIndex == 2)
+            {
+                if (label12.Text != "" && textBox2.Text != "")
+                {
+                    button7.Enabled = false;
+                    button2.Text = "Scrapping...";
+                    StartSearchQueryChannelScraping();
+                    button7.Text = "Open Pages list.csv";
+                }
+                else
+                {
+                    MessageBox.Show("Please provide file(s)");
+                }
+            }
         }
-        private async void StartSearchQueryScraping()
+        private async void StartSearchQueryVideoScraping()
         {
-            try
-            {
-                HttpClient client = new HttpClient();
-                string ss = await client.GetStringAsync("https://www.youtube.com/watch?v=DuudSp4sHmg");
-
-                string b = ss.Substring(ss.IndexOf("channelId"),40).Remove(0,12).Substring(0,24);
-            }
-            catch (Exception)
-            {
-
-            }
-
             UserInput userInput = new UserInput
             {
                 SearchQuery = textBox1.Text,
-                NoOfVideos = double.Parse(comboBox1.Text),
+                ScrapeRecordCount = double.Parse(comboBox1.Text),
                 ApiKeys = File.ReadAllText(label1.Text).Split('\n')
             };
             YTSearchQueryUI yTSearchQueryUI = new YTSearchQueryUI();
             string ui = JsonConvert.SerializeObject(userInput);
-            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(ui,new LabelUpdaterDelegate(UpdateLabel));
+            string ytData = await yTSearchQueryUI.ScrapeVideosBySearchQuery(ui,new LabelUpdaterDelegate(UpdateLabel));
             List<YTDataModel> ytDataModels = JsonConvert.DeserializeObject<List<YTDataModel>>(ytData);
             FillDataInCsv(ytDataModels);
             button2.Text = "Start Scrapping";
             button7.Enabled = true;
         }
 
+        private async void StartSearchQueryChannelScraping()
+        {
+            UserInput userInput = new UserInput
+            {
+                SearchQuery = textBox2.Text,
+                ScrapeRecordCount = double.Parse(comboBox3.Text),
+                ApiKeys = File.ReadAllText(label12.Text).Split('\n')
+            };
+            YTSearchQueryUI yTSearchQueryUI = new YTSearchQueryUI();
+            string ui = JsonConvert.SerializeObject(userInput);
+            string ytData = await yTSearchQueryUI.ScrapeChannelsBySearchQuery(ui, new LabelUpdaterDelegate(UpdateLabel));
+            List<YTDataModel> ytDataModels = JsonConvert.DeserializeObject<List<YTDataModel>>(ytData);
+            FillDataInCsv(ytDataModels);
+            button2.Text = "Start Scrapping";
+            button7.Enabled = true;
+        }
         private async void StartChannelsListScrapping()
         {
             UserInput userInput = new UserInput
             {
-                NoOfVideos = double.Parse(comboBox2.Text),
+                ScrapeRecordCount = double.Parse(comboBox2.Text),
                 ApiKeys = File.ReadAllText(label7.Text).Split('\n')
             };
             string[] channelsList = File.ReadAllText(label9.Text).Split('\n');
             YTSearchQueryUI yTSearchQueryUI = new YTSearchQueryUI();
             string ui = JsonConvert.SerializeObject(userInput);
-            string ytData = await yTSearchQueryUI.GetYTDataUIAsync(ui, channelsList, new LabelUpdaterDelegate(UpdateLabel));
+            string ytData = await yTSearchQueryUI.ScrapeChannelsByChannelsList(ui, channelsList, new LabelUpdaterDelegate(UpdateLabel));
             List<YTDataModel> ytDataModels = JsonConvert.DeserializeObject<List<YTDataModel>>(ytData);
             FillDataInCsv(ytDataModels);
             button2.Text = "Start Scrapping";
@@ -208,5 +230,7 @@ namespace ScrapperUI
             string csvFileName = button7.Text.Substring(5);
             Process.Start(csvFileName);
         }
+
+
     }
 }
