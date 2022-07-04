@@ -48,3 +48,28 @@ E:\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.CoreCompileI
 E:\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.CopyComplete
 E:\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.exe
 E:\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\ScrapperUI.exe.config
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\ScrapperUI.exe
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\ScrapperUI.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Newtonsoft.Json.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\YTSearchQueryLib.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.YouTube.v3.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.Core.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\YTSearchQueryLib.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Newtonsoft.Json.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.YouTube.v3.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.YouTube.v3.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.Core.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\bin\Debug\Google.Apis.Core.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.AssemblyReference.cache
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.SuggestedBindingRedirects.cache
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.Form1.resources
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.Properties.Resources.resources
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.GenerateResource.cache
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.CoreCompileInputs.cache
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.csproj.CopyComplete
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.exe
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\ScrapperUI\obj\Debug\ScrapperUI.pdb

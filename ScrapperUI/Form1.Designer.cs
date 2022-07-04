@@ -68,7 +68,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -78,6 +77,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.chaDescription = new System.Windows.Forms.CheckBox();
+            this.chaThumbnail = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -246,13 +248,15 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Silver;
             this.groupBox1.Location = new System.Drawing.Point(16, 212);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(165, 205);
+            this.groupBox1.Size = new System.Drawing.Size(165, 267);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Video";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.chaThumbnail);
+            this.groupBox2.Controls.Add(this.chaDescription);
             this.groupBox2.Controls.Add(this.chaName);
             this.groupBox2.Controls.Add(this.chaURL);
             this.groupBox2.Controls.Add(this.chaSubscribers);
@@ -262,7 +266,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Silver;
             this.groupBox2.Location = new System.Drawing.Point(192, 212);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(165, 205);
+            this.groupBox2.Size = new System.Drawing.Size(165, 267);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Channel";
@@ -284,7 +288,7 @@
             this.chaURL.AutoSize = true;
             this.chaURL.Checked = true;
             this.chaURL.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaURL.Location = new System.Drawing.Point(18, 58);
+            this.chaURL.Location = new System.Drawing.Point(18, 86);
             this.chaURL.Name = "chaURL";
             this.chaURL.Size = new System.Drawing.Size(61, 22);
             this.chaURL.TabIndex = 8;
@@ -296,7 +300,7 @@
             this.chaSubscribers.AutoSize = true;
             this.chaSubscribers.Checked = true;
             this.chaSubscribers.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaSubscribers.Location = new System.Drawing.Point(18, 86);
+            this.chaSubscribers.Location = new System.Drawing.Point(18, 114);
             this.chaSubscribers.Name = "chaSubscribers";
             this.chaSubscribers.Size = new System.Drawing.Size(124, 22);
             this.chaSubscribers.TabIndex = 12;
@@ -308,7 +312,7 @@
             this.chaVideos.AutoSize = true;
             this.chaVideos.Checked = true;
             this.chaVideos.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaVideos.Location = new System.Drawing.Point(18, 114);
+            this.chaVideos.Location = new System.Drawing.Point(18, 142);
             this.chaVideos.Name = "chaVideos";
             this.chaVideos.Size = new System.Drawing.Size(81, 22);
             this.chaVideos.TabIndex = 9;
@@ -320,7 +324,7 @@
             this.chaViews.AutoSize = true;
             this.chaViews.Checked = true;
             this.chaViews.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaViews.Location = new System.Drawing.Point(18, 142);
+            this.chaViews.Location = new System.Drawing.Point(18, 170);
             this.chaViews.Name = "chaViews";
             this.chaViews.Size = new System.Drawing.Size(74, 22);
             this.chaViews.TabIndex = 11;
@@ -332,7 +336,7 @@
             this.chaCreationDate.AutoSize = true;
             this.chaCreationDate.Checked = true;
             this.chaCreationDate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaCreationDate.Location = new System.Drawing.Point(18, 169);
+            this.chaCreationDate.Location = new System.Drawing.Point(18, 197);
             this.chaCreationDate.Name = "chaCreationDate";
             this.chaCreationDate.Size = new System.Drawing.Size(138, 22);
             this.chaCreationDate.TabIndex = 10;
@@ -346,7 +350,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Silver;
             this.groupBox3.Location = new System.Drawing.Point(370, 212);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(165, 205);
+            this.groupBox3.Size = new System.Drawing.Size(165, 267);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Misc";
@@ -572,19 +576,6 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.ImportApiKeys);
             // 
-            // button7
-            // 
-            this.button7.Enabled = false;
-            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(547, 394);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(191, 22);
-            this.button7.TabIndex = 20;
-            this.button7.Text = "Open CSV File";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -699,12 +690,49 @@
             this.label14.TabIndex = 24;
             this.label14.Text = "Search Query";
             // 
+            // button7
+            // 
+            this.button7.Enabled = false;
+            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(547, 394);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(191, 22);
+            this.button7.TabIndex = 20;
+            this.button7.Text = "Open CSV File";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // chaDescription
+            // 
+            this.chaDescription.AutoSize = true;
+            this.chaDescription.Checked = true;
+            this.chaDescription.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chaDescription.Location = new System.Drawing.Point(18, 58);
+            this.chaDescription.Name = "chaDescription";
+            this.chaDescription.Size = new System.Drawing.Size(119, 22);
+            this.chaDescription.TabIndex = 14;
+            this.chaDescription.Text = "Description";
+            this.chaDescription.UseVisualStyleBackColor = true;
+            // 
+            // chaThumbnail
+            // 
+            this.chaThumbnail.AutoSize = true;
+            this.chaThumbnail.Checked = true;
+            this.chaThumbnail.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chaThumbnail.Location = new System.Drawing.Point(18, 225);
+            this.chaThumbnail.Name = "chaThumbnail";
+            this.chaThumbnail.Size = new System.Drawing.Size(109, 22);
+            this.chaThumbnail.TabIndex = 15;
+            this.chaThumbnail.Text = "Thumbnail";
+            this.chaThumbnail.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(750, 433);
+            this.ClientSize = new System.Drawing.Size(753, 491);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox3);
@@ -790,6 +818,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckBox chaDescription;
+        private System.Windows.Forms.CheckBox chaThumbnail;
     }
 }
 

@@ -44,3 +44,26 @@ E:\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.csproj.
 E:\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.csproj.CopyComplete
 E:\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.dll
 E:\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\YTSearchQueryLib.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\YTSearchQueryLib.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.Auth.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.Core.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.PlatformServices.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.YouTube.v3.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Newtonsoft.Json.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.Auth.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.Auth.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.Core.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.Core.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.YouTube.v3.pdb
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Google.Apis.YouTube.v3.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\bin\Debug\Newtonsoft.Json.xml
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.csproj.AssemblyReference.cache
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.csproj.CoreCompileInputs.cache
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.csproj.CopyComplete
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.dll
+D:\Upwork Projects\Scraping\ScrapeDataUsingYoutubeApi\YTSearchQueryLib\obj\Debug\YTSearchQueryLib.pdb

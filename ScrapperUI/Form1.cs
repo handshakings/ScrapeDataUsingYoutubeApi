@@ -155,7 +155,10 @@ namespace ScrapperUI
 
         private void FillDataInCsv(List<YTDataModel> ytDataModels)
         {
-            string name = (textBox1.Text == "") ? "Pages list.csv" : textBox1.Text+".csv";
+            string name = textBox1.Text != "" ? textBox1.Text + ".csv" :
+                          textBox2.Text != "" ? textBox2.Text + ".csv" :
+                          "Pages list.csv";
+
             FileStream fileStream = new FileStream(name, FileMode.Append);
             StreamWriter writer = new StreamWriter(fileStream);
             writer.WriteLine(BuildHeader());
@@ -180,11 +183,13 @@ namespace ScrapperUI
             header = (vidDislikes.Checked) ? header+",Video Dislikes" : header;
             header = (vidPublishedDate.Checked) ? header+",Video Published Date" : header;
             header = (chaName.Checked) ? header+",Channel Name" : header;
+            header = (chaDescription.Checked) ? header+",Channel Description" : header;
             header = (chaURL.Checked) ? header+",Channel URL" : header;
             header = (chaSubscribers.Checked) ? header+",Channel Subscribers" : header;
             header = (chaVideos.Checked) ? header+",Channel Videos" : header;
             header = (chaViews.Checked) ? header+",Channel Views" : header;
             header = (chaCreationDate.Checked) ? header+",Channel Creation Date" : header;
+            header = (chaThumbnail.Checked) ? header+",Thumbnail Path" : header;
             header = (email.Checked) ? header+",Email" : header;
             header = (socialLinks.Checked) ? header+",Social Links" : header;
             return header;
@@ -199,11 +204,13 @@ namespace ScrapperUI
             row = (vidDislikes.Checked) ? row + ","+ytDataModel.VideoDislikes : row;
             row = (vidPublishedDate.Checked) ? row + ","+ytDataModel.VideoPublishedDate : row;
             row = (chaName.Checked) ? row + ","+ytDataModel.ChannelName : row;
+            row = (chaDescription.Checked) ? row + ","+ytDataModel.ChannelDescription : row;
             row = (chaURL.Checked) ? row + ","+ytDataModel.ChannelUrl : row;
             row = (chaSubscribers.Checked) ? row + ","+ytDataModel.ChannelSubscribers : row;
             row = (chaVideos.Checked) ? row + ","+ytDataModel.ChannelVideos : row;
             row = (chaViews.Checked) ? row + ","+ytDataModel.ChannelViews : row;
             row = (chaCreationDate.Checked) ? row + ","+ytDataModel.ChannelCreatedDate : row;
+            row = (chaThumbnail.Checked) ? row + ","+ytDataModel.ThumbnailPath : row;
             row = (email.Checked) ? row + "," + "\"" + ytDataModel.Email.Trim() + "\"" : row;
             row = (email.Checked) ? row + "," + "\"" + ytDataModel.Links.Trim() + "\"" : row;
             return row;

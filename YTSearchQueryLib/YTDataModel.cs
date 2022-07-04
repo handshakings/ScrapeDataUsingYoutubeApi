@@ -22,6 +22,7 @@
         public string ChannelCreatedDate { get; set; }
         public string Email { get; set; }
         public string Links { get; set; }
+        public string ThumbnailPath { get; set; }
 
         public string BuildDataRow(YTDataModel yTDataModel)
         {

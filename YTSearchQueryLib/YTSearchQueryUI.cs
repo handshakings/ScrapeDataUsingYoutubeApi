@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 
@@ -32,6 +33,8 @@ namespace YTSearchQueryLib
             int rowCounter = 1;
             List<YTDataModel> ytData = new List<YTDataModel>();
             int ytServicesCounter = 0;
+            string nextPageToken = null;
+
             while (pageCounter <= noOfPages)
             {
                 ytServicesCounter = (pageCounter > ytServices.Count) ? 0 : ytServicesCounter;
@@ -41,8 +44,9 @@ namespace YTSearchQueryLib
 
                 try
                 {
+                    searchListRequest.PageToken = nextPageToken != null ? nextPageToken : searchListRequest.PageToken;
                     var searchListResponse = await searchListRequest.ExecuteAsync();
-                    searchListRequest.PageToken = searchListResponse.NextPageToken;
+                    nextPageToken = searchListResponse.NextPageToken;
 
                     foreach (var searchResult in searchListResponse.Items)
                     {
@@ -129,6 +133,7 @@ namespace YTSearchQueryLib
             int totalRows = int.Parse(ui.ScrapeRecordCount.ToString()) * channelUrlList.Length;
             int totalRowsCounter = 1;
             List<YTDataModel> ytData = new List<YTDataModel>();
+            string nextPageToken = null;
             
             foreach(string channelId in channelIDs)
             {
@@ -145,8 +150,9 @@ namespace YTSearchQueryLib
 
                     try
                     {
+                        searchListRequest.PageToken = nextPageToken != null ? nextPageToken : searchListRequest.PageToken;
                         var searchListResponse = await searchListRequest.ExecuteAsync();
-                        searchListRequest.PageToken = searchListResponse.NextPageToken;
+                        nextPageToken = searchListResponse.NextPageToken;
 
                         foreach (var searchResult in searchListResponse.Items)
                         {
@@ -235,6 +241,9 @@ namespace YTSearchQueryLib
             int rowCounter = 1;
             List<YTDataModel> ytData = new List<YTDataModel>();
             int ytServicesCounter = 0;
+            WebClient webClient = new WebClient();
+            string nextPageToken = null;
+
             while (pageCounter <= noOfPages)
             {
                 ytServicesCounter = (pageCounter > ytServices.Count) ? 0 : ytServicesCounter;
@@ -247,8 +256,10 @@ namespace YTSearchQueryLib
 
                 try
                 {
+                    searchListRequest.PageToken = nextPageToken != null ? nextPageToken : searchListRequest.PageToken;
                     var searchListResponse = await searchListRequest.ExecuteAsync();
-                    searchListRequest.PageToken = searchListResponse.NextPageToken;
+                    nextPageToken = searchListResponse.NextPageToken;
+                    
 
                     foreach (var searchResult in searchListResponse.Items)
                     {
@@ -258,24 +269,52 @@ namespace YTSearchQueryLib
                             searchChannelRequest.Id = searchResult.Snippet.ChannelId;
                             var searchChannelResponse = await searchChannelRequest.ExecuteAsync();
 
+                            //downlload channel thumbnael 
                             Thumbnail thumbnail = searchChannelResponse.Items[0].Snippet.Thumbnails.High;
-                            WebClient webClient = new WebClient();
-                            string url = "e://" + searchChannelResponse.Items[0].Snippet.Title.Replace(",", " ") + ".jpg";
-                            webClient.DownloadFile(thumbnail.Url, url);
-
-
-                            var searchCommentsRequest = ytServices[ytServicesCounter].CommentThreads.List("id,snippet,replies");
-                            searchCommentsRequest.TextFormat = CommentThreadsResource.ListRequest.TextFormatEnum.PlainText;
-                            searchCommentsRequest.VideoId = searchResult.Id.VideoId;
-                            var searchCommentsResponse = await searchCommentsRequest.ExecuteAsync();
-
-                            string commentAndReplyText = GetAllCommentsAndReplies(searchCommentsResponse, searchCommentsRequest);
-                            EmailFinder emailFinder = new EmailFinder();
-                            string email = emailFinder.SearchEmail(searchResult.Snippet.Description + " " + searchChannelResponse.Items[0].Snippet.Description + " " + commentAndReplyText);
-                            string links = emailFinder.SearchLinks(searchResult.Snippet.Description + " " + searchChannelResponse.Items[0].Snippet.Description + " " + commentAndReplyText);
-
                             
+                            string dirPath = Directory.GetCurrentDirectory() + "/Thumbnails/";
+                            if (!Directory.Exists(dirPath))
+                            {
+                                Directory.CreateDirectory(dirPath);
+                            }
+                            string thumbnailTitle = searchChannelResponse.Items[0].Snippet.Title.Replace(",", " ");
+                            thumbnailTitle = Regex.Replace(thumbnailTitle, @"[^a-zA-Z0-9\-\s]", "");
+                            string thumbnailPath =  dirPath +"/"+ rowCounter.ToString() +" "+ thumbnailTitle + ".jpg";
 
+                            while(true)
+                            {
+                                try
+                                {
+                                    webClient.DownloadFile(thumbnail.Url, thumbnailPath);
+                                    break;
+                                }
+                                catch (Exception)
+                                {
+                                    continue;
+                                }
+                            }
+
+                            //var searchChaVideosRequest = ytServices[ytServicesCounter].Search.List("snippet");
+                            //searchChaVideosRequest.Order = SearchResource.ListRequest.OrderEnum.Date;
+                            //searchChaVideosRequest.ChannelId = searchResult.Id.ChannelId;
+                            //var searchChaVideosResponce = await searchChaVideosRequest.ExecuteAsync();
+
+                            string publicData = "n";
+                            //foreach (var item in searchChaVideosResponce.Items)
+                            //{
+                            //    publicData += item.Snippet.Description;
+                            //}
+
+                            EmailFinder emailFinder = new EmailFinder();
+                            string email = emailFinder.SearchEmail(searchResult.Snippet.Description.Replace(","," ") + " " + searchChannelResponse.Items[0].Snippet.Description.Replace(",", " ") + " " + publicData.Replace(",", " "));
+                            string links = emailFinder.SearchLinks(searchResult.Snippet.Description.Replace(",", " ") + " " + searchChannelResponse.Items[0].Snippet.Description.Replace(",", " ") + " " + publicData.Replace(",", " "));
+
+                            string[] filter = new[] { ",", ";", "\"", "\n", "'", "\r", ".", ":" };
+                            string chaDesc = searchChannelResponse.Items[0].Snippet.Description.Replace("\""," ");
+                            foreach (string f in filter)
+                            {
+                                chaDesc.Replace(f, " ");
+                            }
 
                             YTDataModel yTDataModel = new YTDataModel
                             {
@@ -288,9 +327,9 @@ namespace YTSearchQueryLib
                                 //VideoDislikes = searchVidioResponse.Items[0].Statistics.DislikeCount.ToString(),
                                 //VideoPublishedDate = searchVidioResponse.Items[0].Snippet.PublishedAt.ToString(),
                                 ChannelName = searchChannelResponse.Items[0].Snippet.Title.Replace(",", " "),
-                                ChannelUrl = url,
-                                ChannelDescription = searchChannelResponse.Items[0].Snippet.Description.Replace(",", " "),
-                                //ChannelUrl = "https://www.youtube.com/channel/" + searchChannelResponse.Items[0].Id,
+                                ThumbnailPath = searchChannelResponse.Items[0].Snippet.Title.Replace(",", " ") + ".jpg",
+                                ChannelDescription = "\"" +chaDesc+ "\"",
+                                ChannelUrl = "https://www.youtube.com/channel/" + searchChannelResponse.Items[0].Id,
                                 ChannelSubscribers = searchChannelResponse.Items[0].Statistics.SubscriberCount.ToString(),
                                 ChannelVideos = searchChannelResponse.Items[0].Statistics.VideoCount.ToString(),
                                 ChannelViews = searchChannelResponse.Items[0].Statistics.ViewCount.ToString(),
