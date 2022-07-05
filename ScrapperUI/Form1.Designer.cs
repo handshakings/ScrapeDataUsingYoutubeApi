@@ -43,6 +43,8 @@
             this.vidPublishedDate = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chaThumbnail = new System.Windows.Forms.CheckBox();
+            this.chaDescription = new System.Windows.Forms.CheckBox();
             this.chaName = new System.Windows.Forms.CheckBox();
             this.chaURL = new System.Windows.Forms.CheckBox();
             this.chaSubscribers = new System.Windows.Forms.CheckBox();
@@ -78,8 +80,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
-            this.chaDescription = new System.Windows.Forms.CheckBox();
-            this.chaThumbnail = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -271,6 +271,30 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Channel";
             // 
+            // chaThumbnail
+            // 
+            this.chaThumbnail.AutoSize = true;
+            this.chaThumbnail.Checked = true;
+            this.chaThumbnail.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chaThumbnail.Location = new System.Drawing.Point(18, 225);
+            this.chaThumbnail.Name = "chaThumbnail";
+            this.chaThumbnail.Size = new System.Drawing.Size(109, 22);
+            this.chaThumbnail.TabIndex = 15;
+            this.chaThumbnail.Text = "Thumbnail";
+            this.chaThumbnail.UseVisualStyleBackColor = true;
+            // 
+            // chaDescription
+            // 
+            this.chaDescription.AutoSize = true;
+            this.chaDescription.Checked = true;
+            this.chaDescription.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chaDescription.Location = new System.Drawing.Point(18, 58);
+            this.chaDescription.Name = "chaDescription";
+            this.chaDescription.Size = new System.Drawing.Size(119, 22);
+            this.chaDescription.TabIndex = 14;
+            this.chaDescription.Text = "Description";
+            this.chaDescription.UseVisualStyleBackColor = true;
+            // 
             // chaName
             // 
             this.chaName.AutoSize = true;
@@ -395,7 +419,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Yellow;
             this.label4.Location = new System.Drawing.Point(547, 212);
             this.label4.Name = "label4";
@@ -702,30 +726,6 @@
             this.button7.Text = "Open CSV File";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // chaDescription
-            // 
-            this.chaDescription.AutoSize = true;
-            this.chaDescription.Checked = true;
-            this.chaDescription.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaDescription.Location = new System.Drawing.Point(18, 58);
-            this.chaDescription.Name = "chaDescription";
-            this.chaDescription.Size = new System.Drawing.Size(119, 22);
-            this.chaDescription.TabIndex = 14;
-            this.chaDescription.Text = "Description";
-            this.chaDescription.UseVisualStyleBackColor = true;
-            // 
-            // chaThumbnail
-            // 
-            this.chaThumbnail.AutoSize = true;
-            this.chaThumbnail.Checked = true;
-            this.chaThumbnail.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chaThumbnail.Location = new System.Drawing.Point(18, 225);
-            this.chaThumbnail.Name = "chaThumbnail";
-            this.chaThumbnail.Size = new System.Drawing.Size(109, 22);
-            this.chaThumbnail.TabIndex = 15;
-            this.chaThumbnail.Text = "Thumbnail";
-            this.chaThumbnail.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
