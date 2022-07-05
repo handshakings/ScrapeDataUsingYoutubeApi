@@ -6,6 +6,7 @@ using System.IO;
 using System.Net.Http;
 using System.Windows.Forms;
 using YTSearchQueryLib;
+using System.Linq;
 
 namespace ScrapperUI
 {
@@ -24,6 +25,8 @@ namespace ScrapperUI
 
         public void UpdateLabel(string scrappedRowCount)
         {
+            label4.Invalidate();
+            label4.Refresh();
             label4.Text = scrappedRowCount;
         }
 
@@ -131,6 +134,7 @@ namespace ScrapperUI
             string ui = JsonConvert.SerializeObject(userInput);
             string ytData = await yTSearchQueryUI.ScrapeChannelsBySearchQuery(ui, new LabelUpdaterDelegate(UpdateLabel));
             List<YTDataModel> ytDataModels = JsonConvert.DeserializeObject<List<YTDataModel>>(ytData);
+            ytDataModels = ytDataModels.GroupBy(x => x.ChannelUrl).Select(x => x.FirstOrDefault()).ToList();
             FillDataInCsv(ytDataModels);
             button2.Text = "Start Scrapping";
             button7.Enabled = true;
